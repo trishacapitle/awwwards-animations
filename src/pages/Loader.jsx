@@ -11,7 +11,7 @@ const Loader = () => {
   gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 	useGSAP(() => {
-		const letters = loaderRef.current.querySelectorAll(".text span");
+		const letters = loaderRef.current.querySelectorAll(".loader-text span");
 		const tl = gsap.timeline({
 			// scrollTrigger: ".loader",
 			// start: "top 20%"
@@ -60,7 +60,7 @@ const Loader = () => {
 	return (
 		<div>
 			<div className="loader" ref={loaderRef}>
-				<div className="text">
+				<div className="loader-loader-">
 					<span data-text="A">A</span>
 					<span data-text="S">S</span>
 					<span data-text="H">H</span>
