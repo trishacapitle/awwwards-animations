@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
-.container {
+.hero-container {
 	width: 100vw;
 	height: 100vh;
 	font-family: "Roboto", sans-serif;
@@ -10,7 +10,7 @@
 	position:relative;
 }
 
-nav {
+.hero-nav {
 	width: 100%;
 	position: absolute;
 	padding: 2em;
@@ -18,16 +18,16 @@ nav {
 	justify-content: space-around;
 }
 
-nav div:hover {
+.hero-nav div:hover {
 	color: white;
 }
 
-nav > div {
+.hero-nav > div {
 	padding: 2em;
 	cursor: pointer;
 }
 
-.header {
+.hero-header {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -36,12 +36,12 @@ nav > div {
 	color: black;
 }
 
-p {
+.hero-header p {
 	text-align: center;
 	font-size: 12px;
 }
 
-.placeholder {
+.hero-placeholder {
 	text-align: center;
 	font-family: "Bruno Ace SC", sans-serif;
 	font-size: 80px;

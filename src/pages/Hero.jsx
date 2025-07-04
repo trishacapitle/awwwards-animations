@@ -1,31 +1,30 @@
-import './css/Hero.css'
-import gsap  from 'gsap';
-import { useGSAP } from '@gsap/react';
-
-gsap.registerPlugin(useGSAP);
+import "./css/Hero.css";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 
 const Hero = () => {
-  useGSAP(() => {
+
+	useGSAP(() => {
 		const subHeaders = [
 			"complete list of gsap reusable animations.",
 			"explore our latest projects and case studies.",
 			"get in touch with me for collaborations or inquiries.",
 		];
-		const items = document.querySelectorAll("#item-1, #item-2, #item-3");
-		const placeholder = document.querySelector(".placeholder");
-		const subheader = document.querySelector("#subheader");
+		const items = document.querySelectorAll("#hero-item-1, #hero-item-2, #hero-item-3");
+		const placeholder = document.querySelector(".hero-placeholder");
+		const subheader = document.querySelector("#hero-subheader");
 
 		function changeColor() {
-			gsap.to(".container", { backgroundColor: "#000", duration: 0.5 });
-			gsap.to(".placeholder, p", { color: "#fff", duration: 0.5 });
-			gsap.to("nav", {
+			gsap.to(".hero-container", { backgroundColor: "#000", duration: 0.5 });
+			gsap.to(".hero-placeholder, .hero-header p", { color: "#fff", duration: 0.5 });
+			gsap.to(".hero-nav", {
 				color: "#929292",
 			});
 		}
 
 		function revertColor() {
-			gsap.to(".container", { backgroundColor: "#e3e3e3", duration: 0.5 });
-			gsap.to(".placeholder, nav, p", { color: "#000", duration: 0.5 });
+			gsap.to(".hero-container", { backgroundColor: "#e3e3e3", duration: 0.5 });
+			gsap.to(".hero-placeholder, .hero-nav, .hero-header p", { color: "#000", duration: 0.5 });
 		}
 
 		items.forEach((item) => {
@@ -135,18 +134,18 @@ const Hero = () => {
 	});
 
 	return (
-		<div className="container">
-			<nav>
-				<div id="item-1">Project Catalog</div>
-				<div id="item-2">Case Studies</div>
-				<div id="item-3">Contact</div>
+		<div className="hero-container">
+			<nav className="hero-nav">
+				<div id="hero-item-1">Project Catalog</div>
+				<div id="hero-item-2">Case Studies</div>
+				<div id="hero-item-3">Contact</div>
 			</nav>
-			<div className="header">
-				<div className="placeholder"> ASHDEV</div>
-				<p id="subheader"></p>
+			<div className="hero-header">
+				<div className="hero-placeholder">ASHDEV</div>
+				<p id="hero-subheader"></p>
 			</div>
 		</div>
 	);
-}
+};
 
-export default Hero
+export default Hero;
