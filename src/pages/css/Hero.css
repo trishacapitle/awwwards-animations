@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+.container {
+	width: 100vw;
+	height: 100vh;
+	font-family: "Roboto", sans-serif;
+	text-transform: uppercase;
+	background-color: #e3e3e3;
+	overflow: hidden;
+	position:relative;
+}
+
+nav {
+	width: 100%;
+	position: absolute;
+	padding: 2em;
+	display: flex;
+	justify-content: space-around;
+}
+
+nav div:hover {
+	color: white;
+}
+
+nav > div {
+	padding: 2em;
+	cursor: pointer;
+}
+
+.header {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 75%;
+	color: black;
+}
+
+p {
+	text-align: center;
+	font-size: 12px;
+}
+
+.placeholder {
+	text-align: center;
+	font-family: "Bruno Ace SC", sans-serif;
+	font-size: 80px;
+  color: #000;
+  line-height: 2.25;
+}
