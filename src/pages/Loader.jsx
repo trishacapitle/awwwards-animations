@@ -13,8 +13,8 @@ const Loader = () => {
 	useGSAP(() => {
 		const letters = loaderRef.current.querySelectorAll(".text span");
 		const tl = gsap.timeline({
-			scrollTrigger: ".loader",
-			start: "top 20%"
+			// scrollTrigger: ".loader",
+			// start: "top 20%"
 		});
 
 		tl.to(letters, {
