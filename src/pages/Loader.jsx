@@ -60,7 +60,7 @@ const Loader = () => {
 	return (
 		<div>
 			<div className="loader" ref={loaderRef}>
-				<div className="loader-loader-">
+				<div className="loader-text">
 					<span data-text="A">A</span>
 					<span data-text="S">S</span>
 					<span data-text="H">H</span>
