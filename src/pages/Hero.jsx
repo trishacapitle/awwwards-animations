@@ -3,6 +3,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
 const Hero = () => {
+	gsap.registerPlugin(useGSAP);
 
 	useGSAP(() => {
 		const subHeaders = [
