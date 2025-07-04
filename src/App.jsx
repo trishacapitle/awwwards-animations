@@ -5,6 +5,7 @@ import { useGSAP } from "@gsap/react";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
 import { useRef } from "react";
 import TileFlip from "./pages/TileFlip";
+import CardStack from "./pages/CardStack";
 
 const App = () => {
 	gsap.registerPlugin(useGSAP, ScrollSmoother);
@@ -26,6 +27,7 @@ const App = () => {
 				<Hero />
 				<Loader />
 				<TileFlip />
+				<CardStack />
 			</div>
 		</div>
 	);
