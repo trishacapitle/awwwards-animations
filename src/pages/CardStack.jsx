@@ -18,13 +18,13 @@ const CardStack = () => {
 		gsap.ticker.lagSmoothing(0);
 
 		// DOM element references
-		const pinnedSection = document.querySelector(".pinned");
-		const stickyHeader = document.querySelector(".sticky-header");
-		const cards = document.querySelectorAll(".card");
-		const progressBarContainer = document.querySelector(".progress-bar");
-		const progressBar = document.querySelector(".progress");
-		const indicesContainer = document.querySelector(".indices");
-		const indices = document.querySelectorAll(".index");
+		const pinnedSection = document.querySelector(".stack-pinned");
+		const stickyHeader = document.querySelector(".stack-sticky-header");
+		const cards = document.querySelectorAll(".stack-card");
+		const progressBarContainer = document.querySelector(".stack-progress-bar");
+		const progressBar = document.querySelector(".stack-progress");
+		const indicesContainer = document.querySelector(".stack-indices");
+		const indices = document.querySelectorAll(".stack-index");
 
 		// Animation configuration
 		const cardCount = cards.length;
@@ -91,7 +91,7 @@ const CardStack = () => {
 				const progress = self.progress * (cardCount + 1);
 				const currentCard = Math.floor(progress);
 
-				// Animate sticky header opacity as user scrolls
+				// Animate stack-sticky header opacity as user scrolls
 				if (progress <= 1) {
 					gsap.to(stickyHeader, {
 						opacity: 1 - progress,
@@ -160,23 +160,23 @@ const CardStack = () => {
 	});
 	return (
 		<div className="card-stack-container">
-			<section className="pinned">
-				<div className="sticky-header">
+			<section className="stack-pinned">
+				<div className="stack-sticky-header">
 					<h1>Roadmap</h1>
 				</div>
 
-				<div className="progress-bar">
-					<div className="progress"></div>
+				<div className="stack-progress-bar">
+					<div className="stack-progress"></div>
 				</div>
 
-				<div className="indices">
+				<div className="stack-indices">
 					{[
 						"bulb-sharp",
 						"rocket-sharp",
 						"extension-puzzle-sharp",
 						"trending-up-sharp",
 					].map((icon, i) => (
-						<div key={i} className="index" id={`index-${i + 1}`}>
+						<div key={i} className="stack-index" id={`stack-index-${i + 1}`}>
 							<p>
 								<ion-icon name={icon}></ion-icon>
 							</p>
@@ -197,11 +197,11 @@ const CardStack = () => {
 
 				{["Phase #01", "Phase #02", "Phase #03", "Phase #04"].map(
 					(phase, i) => (
-						<div key={i} className="card" id={`card-${i + 1}`}>
-							<div className="card-phase">
+						<div key={i} className="stack-card" id={`stack-card-${i + 1}`}>
+							<div className="stack-card-phase">
 								<p>{phase}</p>
 							</div>
-							<div className="card-title">
+							<div className="stack-card-title">
 								<p>
 									From{" "}
 									{["May 15th", "July 1st", "August 20th", "October 5th"][i]}
@@ -217,7 +217,7 @@ const CardStack = () => {
 					)
 				)}
 			</section>
-			<section className="cs-footer">
+			<section className="stack-footer">
 				<h1>Your next section goes here</h1>
 			</section>
 		</div>
