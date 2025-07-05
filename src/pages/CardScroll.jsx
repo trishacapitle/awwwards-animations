@@ -236,10 +236,10 @@ const CardScroll = () => {
 		<div className="scroll-container">
 			<nav>
 				<div className="scroll-logo">
-					<span>Logo Here</span>
+					<span>UNDER CONSTRUCTION -----</span>
 				</div>
 				<div className="scroll-menu-btn">
-					<span>Menu</span>
+					<span>Inspiration: Eduard Bodak</span>
 				</div>
 			</nav>
 
@@ -279,12 +279,12 @@ const CardScroll = () => {
 			</section>
 
 			<section className="scroll-about">
-				<h1>Keep scrolling — it gets good</h1>
+				<h1>Keep scrolling — it will gets good (not yet)</h1>
 			</section>
 
 			<section className="scroll-services">
 				<div className="scroll-services-header">
-					<h1>Smooth animations that feels right</h1>
+					<h1>Smooth animations that feels right (soon)</h1>
 				</div>
 			</section>
 
@@ -398,7 +398,7 @@ const CardScroll = () => {
 			</section>
 
 			<section className="scroll-outro">
-				<h1>It's just the start of the beginning...</h1>
+				<h1>More to gooo...</h1>
 			</section>
 		</div>
 	);
