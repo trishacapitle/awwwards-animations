@@ -122,7 +122,7 @@ const Hero = () => {
 
 		function resetPlaceholderText() {
 			const defaultText = "ASHDEV";
-			const defaultSubheaderText = "Front-End Developer";
+			const defaultSubheaderText = "AWWWARDS WEB ANIMATIONS";
 			subheader.textContent = defaultSubheaderText;
 			animateScale(placeholder, 1.25);
 			shuffleLetters(defaultText);
