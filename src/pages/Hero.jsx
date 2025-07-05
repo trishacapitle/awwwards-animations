@@ -8,7 +8,7 @@ const Hero = () => {
 	useGSAP(() => {
 		const subHeaders = [
 			"complete list of gsap reusable animations.",
-			"explore our latest projects and case studies.",
+			"implementation study for animations and its reusability.",
 			"get in touch with me for collaborations or inquiries.",
 		];
 		const items = document.querySelectorAll("#hero-item-1, #hero-item-2, #hero-item-3");
@@ -122,7 +122,7 @@ const Hero = () => {
 
 		function resetPlaceholderText() {
 			const defaultText = "ASHDEV";
-			const defaultSubheaderText = "FrontEnd Developer";
+			const defaultSubheaderText = "Front-End Developer";
 			subheader.textContent = defaultSubheaderText;
 			animateScale(placeholder, 1.25);
 			shuffleLetters(defaultText);
@@ -137,7 +137,7 @@ const Hero = () => {
 	return (
 		<div className="hero-container">
 			<nav className="hero-nav">
-				<div id="hero-item-1">Project Catalog</div>
+				<div id="hero-item-1">Catalog</div>
 				<div id="hero-item-2">Case Studies</div>
 				<div id="hero-item-3">Contact</div>
 			</nav>
