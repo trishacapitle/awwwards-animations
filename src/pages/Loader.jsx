@@ -6,15 +6,18 @@ import "./css/Loader.css";
 
 const Loader = () => {
 	const loaderRef = useRef();
-  const landingRef = useRef();
-  
-  gsap.registerPlugin(useGSAP, ScrollTrigger);
+	const landingRef = useRef();
+
+	gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 	useGSAP(() => {
 		const letters = loaderRef.current.querySelectorAll(".loader-text span");
 		const tl = gsap.timeline({
 			// scrollTrigger: ".loader",
 			// start: "top 20%"
+			repeat: -1,
+			repeatDelay: 0.5,
+			yoyo: true,
 		});
 
 		tl.to(letters, {
