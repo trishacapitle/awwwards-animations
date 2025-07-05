@@ -44,7 +44,6 @@ const Loader = () => {
 			.to(
 				loaderRef.current,
 				{
-					y: -100,
 					opacity: 0,
 					duration: 0.7,
 					ease: "power2.inOut",
