@@ -144,6 +144,7 @@ const Hero = () => {
 			<div className="hero-header">
 				<div className="hero-placeholder">ASHDEV</div>
 				<p id="hero-subheader"></p>
+				<p>Inspiration: Reframed</p>
 			</div>
 		</div>
 	);
