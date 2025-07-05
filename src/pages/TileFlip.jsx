@@ -96,7 +96,7 @@ const TileFlip = () => {
 		<div ref={container} className="tile-flip-wrapper">
 			<nav className="tile-flip-nav">
 				<a href="#">
-					Ash<span>Dev</span>
+					Ash<span>Dev</span> Inpiration: Junni
 				</a>
 				<button id="flipButton">Flip Tiles</button>
 			</nav>

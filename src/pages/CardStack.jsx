@@ -163,6 +163,7 @@ const CardStack = () => {
 			<section className="stack-pinned">
 				<div className="stack-sticky-header">
 					<h1>Roadmap</h1>
+					<p>Inspiration: Absolut NFT</p>
 				</div>
 
 				<div className="stack-progress-bar">
