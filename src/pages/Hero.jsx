@@ -7,8 +7,8 @@ const Hero = () => {
 
 	useGSAP(() => {
 		const subHeaders = [
-			"complete list of gsap reusable animations.",
-			"implementation study for animations and its reusability.",
+			"complete list of recreated reusable awwwards web animations using gsap.",
+			"in depth analysis of animations logic and its reusability.",
 			"get in touch with me for collaborations or inquiries.",
 		];
 		const items = document.querySelectorAll("#hero-item-1, #hero-item-2, #hero-item-3");
